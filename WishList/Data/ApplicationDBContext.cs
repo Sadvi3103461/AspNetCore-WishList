@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WishList.Models;
-
+//ApplicationDbContext
 namespace WishList.Data
 {
     public class ApplicationDbContext : DbContext
