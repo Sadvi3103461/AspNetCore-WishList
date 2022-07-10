@@ -8,7 +8,7 @@ namespace WishList.Controllers
         private readonly ApplicationDbContext _context;
        public ItemController(ApplicationDbContext context)
         {
-            this._context = context;
+            _context = context;
         }
 
         public IActionResult Index()
