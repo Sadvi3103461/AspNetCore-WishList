@@ -1,14 +1,18 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WishList.Models;
-//ApplicationDbContext
+
 namespace WishList.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext :DbContext
     {
-        public DbSet<Item> Items { get; set; }
+
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
 
         }
+
+        public DbSet<Models.Item> Items { get; set; }
+
+
+
     }
 }
